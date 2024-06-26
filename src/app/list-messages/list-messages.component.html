@@ -1,0 +1,16 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Cedula</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let message of messagesService.messages">
+      <td>{{ message.nombre }}</td>
+      <td>{{ message.apellido }}</td>
+      <td>{{ message.cedula }}</td>
+    </tr>
+  </tbody>
+</table>

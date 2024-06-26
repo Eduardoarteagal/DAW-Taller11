@@ -1,0 +1,16 @@
+<form (ngSubmit)="addMessage()">
+    <div>
+      <label for="nombre" class="form-label">Ingrese su Nombre</label>
+      <input type="text" class="form-control" id="nombre" [(ngModel)]="message.nombre" name="nombre">
+    </div>
+    <div>
+      <label for="apellido" class="form-label">Ingrese su Apellido</label>
+      <input type="text" class="form-control" id="apellido" [(ngModel)]="message.apellido" name="apellido">
+    </div>
+    <div>
+      <label for="cedula" class="form-label">Ingrese su Cédula</label>
+      <input type="text" class="form-control" id="cedula" [(ngModel)]="message.cedula" name="cedula">
+    </div>
+    <button type="submit" class="btn btn-primary mt-2 mb-4">Agregar</button>
+  </form>
+  
